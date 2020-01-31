@@ -3,10 +3,10 @@
 ## :bulb: Objetivo
 Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa aplicação necessita ser executada nos navegadores mais recentes do mercado.
 
+> Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado. Ao efetuar a estimativa para realização.
+
 - [API](http://www.mocky.io/v2/5d3b57023000005500a2a0a6)
 - [Layout](https://xd.adobe.com/spec/b271010a-cc9d-4cce-471f-5ea72cd6e687-c440/)
-
-> Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado. Ao efetuar a estimativa para realização.
 
 
 ## :memo: Histórias
