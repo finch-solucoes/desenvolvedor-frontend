@@ -3,7 +3,7 @@
 ## :bulb: Objetivo
 Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa aplicação necessita ser executada nos navegadores mais recentes do mercado.
 
-> Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado. Ao efetuar a estimativa para realização.
+> Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado.
 
 - [API](http://www.mocky.io/v2/5d3b57023000005500a2a0a6)
 - [Layout](https://xd.adobe.com/spec/b271010a-cc9d-4cce-471f-5ea72cd6e687-c440/)
@@ -21,12 +21,10 @@ Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa apl
 
 
 ## :information_source: Como Usar
-Primeiro faça um fork desse repositório, em seguida na sua linha de comando:
-
-```bash
-# Clone esse repositório e bora codar!
-$ git clone https://github.com/${github_username}/desenvolvedor-frontend && cd desenvolvedor-frontend
-```
+- [Fork](https://help.github.com/en/articles/fork-a-repo) esse [repositório](https://github.com/finch-solucoes/desenvolvedor-frontend);
+- Crie sua branch `git checkout -b seu-nome/desenvolvedor-frontend`;
+- Baixe seu fork `https://github.com/seu-nome-de-usuário/desenvolvedor-frontend.git`;
+- Desenvolva o teste e crie seu [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork);
 
 
 ## :microscope: Especificações Técnicas
