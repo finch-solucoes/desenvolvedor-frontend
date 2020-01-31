@@ -1,16 +1,15 @@
 # Desenvolvedor Frontend
 
 ## :bulb: Objetivo
-Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa aplicação necessita ser executada nos navegadores mais recentes do mercado
+Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa aplicação necessita ser executada nos navegadores mais recentes do mercado.
 
 - [API](http://www.mocky.io/v2/5d3b57023000005500a2a0a6)
 - [Layout](https://xd.adobe.com/spec/b271010a-cc9d-4cce-471f-5ea72cd6e687-c440/)
 
-> ### Estimativa
 > Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado. Ao efetuar a estimativa para realização.
 
 
-## :books: Histórias
+## :memo: Histórias
 
 - Eu como usuário, desejo visualizar a listagem de produtos;
 - Eu como usuário, desejo pesquisar um determinado produto conforme seu nome;
@@ -25,24 +24,21 @@ Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa apl
 Primeiro faça um fork desse repositório, em seguida na sua linha de comando:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/${username}/desenvolvedor-frontend
-
-# Go into the repository
-$ cd desenvolvedor-frontend
+# Clone esse repositório e bora codar!
+$ git clone https://github.com/${github_username}/desenvolvedor-frontend && cd desenvolvedor-frontend
 ```
 
 
-## :trophy: Especificações Técnicas
-A aplicação deve ser responsiva (mobile, tablet, desktop). Publicar o projeto em alguma plataforma (Heroku, Netlify, etc), a fim de ser possível visualizar através de um link, com isso as funcionalidades a serem desenvolvidas serão avaliadas de acordo com o seu nível.
+## :microscope: Especificações Técnicas
+A aplicação deve ser responsiva (Mobile, Tablet, Desktop). Publicar o projeto em alguma plataforma (Heroku, Netlify, a fim de ser possível visualizar através de um link, com isso as funcionalidades a serem desenvolvidas serão avaliadas de acordo com o seu nível.
 
-**Especificações Gerais**
+Especificações Gerais
 - Utilizar React, Vue;
 - Utilizar pré-processador de CSS;
-- Flexbox/Grid;
+- Flexbox e Grid;
 - ES6;
 
-**Nível Junior**
+:baby_bottle: Nível Junior
 - Layout conforme proposto (Dê o seu máximo);
 - A aplicação deve se comportar como uma *Single Page Application*;
 - Utilização de Rotas para navegação;
@@ -50,7 +46,7 @@ A aplicação deve ser responsiva (mobile, tablet, desktop). Publicar o projeto 
 - A busca deverá ser executada em tempo real na listagem atual;
 - (Desejável/Bônus) Gerenciamento de estado;
 
-**Nível Pleno**
+:beer: Nível Pleno
 - Todos os requisitos do nível anterior;
 - Paginação númerada;
 - Armazenar todas as informações no estado utilizando a arquitetura Flux (Redux, Vuex e etc);
@@ -60,7 +56,7 @@ A aplicação deve ser responsiva (mobile, tablet, desktop). Publicar o projeto 
 - (Desejável/Bônus) Testes unitários no estado;
 - (Desejável/Bônus) Utilizar bundle size (Webpack, Rollup ou Parcel);
 
-**Nível Senior**
+:wine_glass: Nível Senior
 - Todos os requisitos do nível anterior;
 - Testes unitários no estado;
 - Utilizar bundle size (Webpack, Rollup ou Parcel);
