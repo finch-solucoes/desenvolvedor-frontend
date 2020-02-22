@@ -22,7 +22,7 @@ Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa apl
 
 ## :information_source: Como Usar
 - [Fork](https://help.github.com/en/articles/fork-a-repo) esse [repositório](https://github.com/finch-solucoes/desenvolvedor-frontend);
-- Crie sua branch `git checkout -b seu-nome/desenvolvedor-frontend`;
+- Crie sua branch `git checkout -b seu-nome-de-usuário/desenvolvedor-frontend`;
 - Baixe seu fork `https://github.com/seu-nome-de-usuário/desenvolvedor-frontend.git`;
 - Desenvolva o teste e crie seu [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork);
 
