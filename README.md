@@ -3,8 +3,6 @@
 ## :bulb: Objetivo
 Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa aplicação necessita ser executada nos navegadores mais recentes do mercado.
 
-> Dependendo da sua experiência e/ou das ferramentas escolhidas, você pode precisar de mais ou menos tempo para realizar o desafio. Lembre-se que vamos avaliar a sua capacidade de estimativa e a sua capacidade em executar o projeto no tempo planejado.
-
 - [API](http://www.mocky.io/v2/5d3b57023000005500a2a0a6)
 - [Layout](https://xd.adobe.com/spec/b271010a-cc9d-4cce-471f-5ea72cd6e687-c440/)
 
@@ -31,7 +29,7 @@ Implementar uma aplicação para gerenciar os produtos da empresa XPTO. Essa apl
 A aplicação deve ser responsiva (Mobile, Tablet, Desktop). Publicar o projeto em alguma plataforma (Heroku, Netlify, a fim de ser possível visualizar através de um link, com isso as funcionalidades a serem desenvolvidas serão avaliadas de acordo com o seu nível.
 
 Especificações Gerais
-- Utilizar React, Vue;
+- Utilizar React;
 - Utilizar pré-processador de CSS;
 - Flexbox e Grid;
 - ES6;
@@ -39,29 +37,25 @@ Especificações Gerais
 :baby_bottle: Nível Junior
 - Layout conforme proposto (Dê o seu máximo);
 - A aplicação deve se comportar como uma *Single Page Application*;
-- Utilização de Rotas para navegação;
+- Utilização de rotas para navegação;
 - Ao navegar entre as rotas, as informações devem ser mantidas e não pode haver *refresh* da listagem;
 - A busca deverá ser executada em tempo real na listagem atual;
-- (Desejável/Bônus) Gerenciamento de estado;
+- (Desejável/Bônus) Gerenciamento de estado com arquitetura Flux;
+- (Desejável/Bônus) Utilizar bundle size (Webpack, Rollup);
 
 :beer: Nível Pleno
-- Todos os requisitos do nível anterior;
-- Paginação númerada;
-- Armazenar todas as informações no estado utilizando a arquitetura Flux (Redux, Vuex e etc);
+- Todos os requisitos do nível anterior (Incluindo Desejável/Bônus);
 - Ao navegar nos filtros laterais, todas as informações devem já estar no estado;
 - Ao pesquisar, deverá ser armazenado no estado todas as pesquisas realizadas na sessão atual;
-- Configurar eslint (airbnb);
+- Configurar ESLint e Prettier (Airbnb);
 - (Desejável/Bônus) Testes unitários no estado;
-- (Desejável/Bônus) Utilizar bundle size (Webpack, Rollup ou Parcel);
+- (Desejável/Bônus) CSS no Javascript (Styled components, Emotion);
 
 :wine_glass: Nível Senior
-- Todos os requisitos do nível anterior;
-- Testes unitários no estado;
-- Utilizar bundle size (Webpack, Rollup ou Parcel);
-- Utilizar alguma metodologia para CSS (BEM, SMACSS, ATOMIC CSS);
+- Todos os requisitos do nível anterior (Incluindo Desejável/Bônus);
+- Utilizar style guide para CSS (BEM, SMACSS);
 - (Desejável/Bônus) Fazer internacionalização da aplicação;
-- (Desejável/Bônus) Criar o Story Book dos Components;
-- (Desejável/Bônus) CSS in JS
+- (Desejável/Bônus) Criar o Storybook dos componentes;
 
 ---
 
