@@ -7,6 +7,8 @@ import colors from '../../styles/colors';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  position: fixed;
+  height: 100vh;
   width: 130px;
   padding: 0 12px;
   background: #fff;
