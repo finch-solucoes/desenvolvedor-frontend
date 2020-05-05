@@ -6,5 +6,6 @@ export const Container = styled.div`
 
   section {
     flex: 1;
+    padding: 0 64px 0 96px;
   }
 `;

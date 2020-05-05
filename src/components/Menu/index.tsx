@@ -16,19 +16,19 @@ const Menu: React.FC = () => {
       </Logo>
       <Item to="/" exact>
         <img src={suppliesImg} alt="ícone todos os produtos" />
-        <span>Todos</span>
+        <strong>Todos</strong>
       </Item>
       <Item to="/exclusives">
         <img src={boxImg} alt="ícone produtos exclusivos" />
-        <span>Exclusivos</span>
+        <strong>Exclusivos</strong>
       </Item>
       <Item to="/promotion">
         <img src={giftBoxImg} alt="ícone produtos em promoção" />
-        <span>Promoção</span>
+        <strong>Promoção</strong>
       </Item>
       <Item to="/favorites">
         <img src={recommendedImg} alt="ícone produtos favoritos" />
-        <span>Favoritos</span>
+        <strong>Favoritos</strong>
       </Item>
 
       <FinchLogo>

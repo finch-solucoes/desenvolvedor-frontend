@@ -36,8 +36,8 @@ export const Item = styled(NavLink)`
       opacity: 1;
     }
 
-    span {
-      color: ${colors.darkText};
+    strong {
+      color: ${colors.primary};
     }
   }
 
@@ -47,11 +47,9 @@ export const Item = styled(NavLink)`
     transition: opacity 0.2s ease;
   }
 
-  span {
+  strong {
     color: ${colors.grayText};
     font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
     transition: color 0.2s ease;
   }
 `;
