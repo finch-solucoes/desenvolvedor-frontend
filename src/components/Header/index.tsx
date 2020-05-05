@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SearchInput from '../SearchInput';
 import { Container, InfoPage } from './styles';
 
 const Header: React.FC = () => {
@@ -14,6 +15,7 @@ const Header: React.FC = () => {
           Listagem de produtos - clique no produto desejado para saber mais
         </small>
       </InfoPage>
+      <SearchInput />
     </Container>
   );
 };

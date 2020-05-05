@@ -4,6 +4,7 @@ import colors from '../../styles/colors';
 
 export const Container = styled.header`
   display: flex;
+  justify-content: space-between;
   padding: 72px 0 48px;
   border-bottom: 1px solid #ccc;
 `;
