@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import axios from 'axios';
 
+import ScrollToTop from './components/ScrollToTop';
 import Routes from './routes';
 import { storeProducts } from './store/modules/products/actions';
 import { Product } from './store/modules/products/types';
@@ -34,6 +35,7 @@ const App: React.FC = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes />
       </BrowserRouter>
       <GlobalStyle />

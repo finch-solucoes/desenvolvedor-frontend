@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Header
-        title="Conheça todos os nosso produtos"
+        title="Conheça todos os nossos produtos"
         subTitle="Listagem de produtos - clique no produto desejado para saber mais"
       />
       <Container>

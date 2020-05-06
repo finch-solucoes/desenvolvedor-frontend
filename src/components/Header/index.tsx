@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import SearchInput from '../SearchInput';
 import { Container, InfoPage } from './styles';
@@ -23,4 +23,4 @@ const Header: React.FC<HeaderProps> = ({ title, subTitle }) => {
   );
 };
 
-export default Header;
+export default memo(Header);

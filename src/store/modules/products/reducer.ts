@@ -37,6 +37,12 @@ export default function products(
             : product,
         );
 
+        // update exclusives
+        draft.exclusives = draft.all.filter(product => product.exclusivo);
+
+        // update promotions
+        draft.promotion = draft.all.filter(product => product.promocao);
+
         // update favorites
         draft.favorites = draft.all.filter(product => product.favorito);
         break;

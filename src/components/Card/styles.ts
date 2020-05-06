@@ -107,6 +107,6 @@ export const Container = styled.div<ContainerProps>`
 export const CardGrid = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 64px;
 `;
