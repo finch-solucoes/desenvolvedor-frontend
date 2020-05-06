@@ -30,4 +30,8 @@ export const Container = styled.div`
       color: ${colors.grayText};
     }
   }
+
+  @media (max-width: 1220px) {
+    width: 100%;
+  }
 `;

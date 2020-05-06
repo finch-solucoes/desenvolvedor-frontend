@@ -7,6 +7,10 @@ export const Container = styled.header`
   justify-content: space-between;
   padding: 72px 0 48px;
   border-bottom: 1px solid #ccc;
+
+  @media (max-width: 1220px) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoPage = styled.div`
@@ -25,11 +29,24 @@ export const InfoPage = styled.div`
       font-weight: 200;
       margin-left: 5px;
     }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      span {
+        margin-left: 0;
+      }
+    }
   }
 
   small {
     display: block;
     font-size: 14px;
     margin-top: 6px;
+  }
+
+  @media (max-width: 1220px) {
+    margin-bottom: 24px;
   }
 `;

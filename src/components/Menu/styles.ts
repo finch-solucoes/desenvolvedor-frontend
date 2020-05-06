@@ -13,6 +13,14 @@ export const Container = styled.div`
   padding: 0 12px;
   background: #fff;
   box-shadow: 0px 3px 50px #00000029;
+
+  @media (max-width: 800px) {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+  }
 `;
 
 export const Logo = styled.div`
@@ -20,6 +28,10 @@ export const Logo = styled.div`
   justify-content: center;
   align-items: center;
   margin: 40px 0;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 export const Item = styled(NavLink)`
@@ -54,6 +66,17 @@ export const Item = styled(NavLink)`
     font-size: 16px;
     transition: color 0.2s ease;
   }
+
+  @media (max-width: 800px) {
+    justify-content: flex-end;
+    border: 0;
+    padding: 0;
+    margin-bottom: 4px;
+
+    img {
+      margin: 0;
+    }
+  }
 `;
 
 export const FinchLogo = styled.div`
@@ -62,4 +85,8 @@ export const FinchLogo = styled.div`
   align-items: center;
   margin-top: auto;
   margin-bottom: 24px;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
