@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
 import Switch from 'react-switch';
 
 import productImg from '../../assets/NoPath.png';
@@ -18,10 +19,16 @@ import {
 } from './styles';
 
 const Product: React.FC = () => {
+  const history = useHistory();
+
+  const handleGoBack = useCallback(() => {
+    history.goBack();
+  }, [history]);
+
   return (
     <>
       <Header>
-        <BackButton type="button">
+        <BackButton type="button" onClick={handleGoBack}>
           <img src={returnImg} alt="botão para voltar a página" />
         </BackButton>
         <Divider />
@@ -90,7 +97,7 @@ const Product: React.FC = () => {
             <li>Lightning connector: Sim</li>
           </ul>
         </Datasheet>
-        <FabBackButton type="button">
+        <FabBackButton type="button" onClick={handleGoBack}>
           <img src={returnImg} alt="botão para voltar a página" />
         </FabBackButton>
       </Container>

@@ -8,23 +8,19 @@ import { ApplicationState } from '../../store';
 import { Container } from './styles';
 
 const Home: React.FC = () => {
-  const products = useSelector((state: ApplicationState) => state.products);
-
-  console.log(products);
+  const products = useSelector((state: ApplicationState) => state.products.all);
 
   return (
     <>
-      <Header />
+      <Header
+        title="Conheça todos os nosso produtos"
+        subTitle="Listagem de produtos - clique no produto desejado para saber mais"
+      />
       <Container>
         <CardGrid>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {products.map(product => (
+            <Card key={String(product.id)} product={product} />
+          ))}
         </CardGrid>
       </Container>
     </>

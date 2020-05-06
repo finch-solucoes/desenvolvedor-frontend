@@ -21,7 +21,7 @@ const App: React.FC = () => {
       // set favorite default value
       const products = produtos.map((produto: Product) => ({
         ...produto,
-        favorite: false,
+        favorito: false,
       }));
 
       // store products in Redux

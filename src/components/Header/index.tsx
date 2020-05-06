@@ -3,17 +3,20 @@ import React from 'react';
 import SearchInput from '../SearchInput';
 import { Container, InfoPage } from './styles';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  title: string;
+  subTitle: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ title, subTitle }) => {
   return (
     <Container>
       <InfoPage>
         <div>
           <h1>Empresa XPTO</h1>
-          <span>Conheça todos os nosso produtos</span>
+          <span>{title}</span>
         </div>
-        <small>
-          Listagem de produtos - clique no produto desejado para saber mais
-        </small>
+        <small>{subTitle} </small>
       </InfoPage>
       <SearchInput />
     </Container>

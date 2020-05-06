@@ -1,11 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import colors from '../../styles/colors';
 
-export const Container = styled.div`
+interface ContainerProps {
+  isPromotion: boolean;
+  isExclusive: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   border-radius: 3px;
   background: #fff;
   box-shadow: 0px 10px 20px #16319b29;
@@ -19,6 +25,7 @@ export const Container = styled.div`
 
     img {
       width: 100%;
+      height: 200px;
       object-fit: cover;
       transition: transform 1s ease-in-out;
     }
@@ -33,10 +40,17 @@ export const Container = styled.div`
     background: transparent linear-gradient(125deg, #ef0e5a 0%, #55118f 100%) 0%
       0% no-repeat padding-box;
 
-    /* background: transparent linear-gradient(125deg, #1DB6CE 0%, #182AC9 100%) 0% 0% no-repeat padding-box; */
+    ${props =>
+      props.isExclusive &&
+      css`
+        background: transparent
+          linear-gradient(125deg, #1db6ce 0%, #182ac9 100%) 0% 0% no-repeat
+          padding-box;
+      `}
   }
 
   .card__body {
+    flex: 1;
     padding: 16px 24px;
 
     > div {
@@ -71,6 +85,11 @@ export const Container = styled.div`
 
     .card__description {
       color: ${colors.text};
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; /* number of lines to show */
     }
   }
 

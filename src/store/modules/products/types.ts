@@ -14,7 +14,7 @@ export interface Product {
   descricaoLonga: string;
   exclusivo: boolean;
   promocao: boolean;
-  favorite: boolean;
+  favorito: boolean;
   fichaTecnica: TechItem[];
   valor: number;
 }
@@ -33,6 +33,7 @@ export interface ProductsState {
  * ACTIONS TYPES
  */
 export const STORE_PRODUCTS = '@xpto/STORE_PRODUCTS';
+export const FAVORITE_PRODUCT = '@xpto/FAVORITE_PRODUCT';
 
 /*
  * ACTIONS
@@ -42,4 +43,9 @@ export interface StoreProductsAction {
   payload: Product[];
 }
 
-export type ProductsActionTypes = StoreProductsAction;
+export interface FavoriteProductAction {
+  type: typeof FAVORITE_PRODUCT;
+  payload: Product;
+}
+
+export type ProductsActionTypes = StoreProductsAction | FavoriteProductAction;

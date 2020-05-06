@@ -1,6 +1,11 @@
 import produce from 'immer';
 
-import { ProductsState, STORE_PRODUCTS, ProductsActionTypes } from './types';
+import {
+  ProductsState,
+  STORE_PRODUCTS,
+  ProductsActionTypes,
+  FAVORITE_PRODUCT,
+} from './types';
 
 const INITIAL_STATE: ProductsState = {
   all: [],
@@ -19,6 +24,21 @@ export default function products(
         draft.all = action.payload;
         draft.exclusives = action.payload.filter(product => product.exclusivo);
         draft.promotion = action.payload.filter(product => product.promocao);
+        break;
+      }
+
+      case FAVORITE_PRODUCT: {
+        const favoritedProduct = action.payload;
+
+        // update all products
+        draft.all = draft.all.map(product =>
+          product.id === favoritedProduct.id
+            ? { ...product, favorito: !product.favorito }
+            : product,
+        );
+
+        // update favorites
+        draft.favorites = draft.all.filter(product => product.favorito);
         break;
       }
       default:

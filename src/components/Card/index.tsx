@@ -1,24 +1,50 @@
-import React from 'react';
+import React, { useMemo, memo, useCallback } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Switch from 'react-switch';
 
-import productImg from '../../assets/NoPath.png';
+import { toggleFavoriteProduct } from '../../store/modules/products/actions';
+import { Product } from '../../store/modules/products/types';
 import { Container } from './styles';
 
-const Card: React.FC = () => {
+interface CardProps {
+  product: Product;
+}
+
+const Card: React.FC<CardProps> = ({ product }) => {
+  const dispatch = useDispatch();
+
+  const formatedPrice = useMemo(
+    () =>
+      Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+      }).format(product.valor),
+    [product.valor],
+  );
+
+  const handleFavorite = useCallback(() => {
+    dispatch(toggleFavoriteProduct(product));
+  }, [dispatch, product]);
+
   return (
-    <Container className="card">
-      <Link to="/product/1" className="card__header">
-        <img src={productImg} alt="produto" />
-        <div className="card__tag">Promoção</div>
+    <Container
+      className="card"
+      isPromotion={product.promocao}
+      isExclusive={product.exclusivo}
+    >
+      <Link to={`/product/${product.id}`} className="card__header">
+        <img src={product.imagem} alt="produto" />
+        {product.promocao && <div className="card__tag">Promoção</div>}
+        {product.exclusivo && <div className="card__tag">Exclusivo</div>}
       </Link>
       <div className="card__body">
         <div>
-          <strong className="card__price">R$ 5.698,00</strong>
+          <strong className="card__price">{formatedPrice}</strong>
           <div className="card__favorite">
             <Switch
-              onChange={() => {}}
-              checked={false}
+              onChange={handleFavorite}
+              checked={product.favorito}
               width={25}
               height={12}
               handleDiameter={8}
@@ -31,14 +57,11 @@ const Card: React.FC = () => {
           </div>
         </div>
 
-        <strong className="card__title">Fone Bluetooh XPTO</strong>
-        <p className="card__description">
-          Aparelho intra auricular de som em alta definição sem fio para os
-          viciados de plantão
-        </p>
+        <strong className="card__title">{product.nome}</strong>
+        <p className="card__description">{product.decricaoCurta}</p>
       </div>
     </Container>
   );
 };
 
-export default Card;
+export default memo(Card);
