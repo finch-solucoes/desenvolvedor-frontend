@@ -24,7 +24,7 @@ export const Container = styled.div`
     }
   }
 
-  .carad__tag {
+  .card__tag {
     position: absolute;
     bottom: 0;
     right: 0;

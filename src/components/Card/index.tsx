@@ -8,9 +8,9 @@ import { Container } from './styles';
 const Card: React.FC = () => {
   return (
     <Container className="card">
-      <Link to="/" className="card__header">
+      <Link to="/product/1" className="card__header">
         <img src={productImg} alt="produto" />
-        <div className="carad__tag">Promoção</div>
+        <div className="card__tag">Promoção</div>
       </Link>
       <div className="card__body">
         <div>
