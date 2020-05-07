@@ -8,7 +8,7 @@ import {
   FILTER_PRODUCTS,
 } from './types';
 
-const INITIAL_STATE: ProductsState = {
+export const INITIAL_STATE: ProductsState = {
   all: [],
   searchTerm: '',
 };
