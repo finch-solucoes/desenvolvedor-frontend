@@ -6,9 +6,7 @@ import reducers from './modules/rootReducer';
 export interface ApplicationState {
   products: {
     all: Product[];
-    exclusives: Product[];
-    promotion: Product[];
-    favorites: Product[];
+    searchTerm: string;
   };
 }
 

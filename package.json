@@ -20,7 +20,8 @@
     "react-switch": "^5.0.1",
     "redux": "^4.0.5",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "use-debounce": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",

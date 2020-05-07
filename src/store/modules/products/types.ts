@@ -24,9 +24,7 @@ export interface Product {
  */
 export interface ProductsState {
   readonly all: Product[];
-  readonly exclusives: Product[];
-  readonly promotion: Product[];
-  readonly favorites: Product[];
+  readonly searchTerm: string;
 }
 
 /*
@@ -34,6 +32,7 @@ export interface ProductsState {
  */
 export const STORE_PRODUCTS = '@xpto/STORE_PRODUCTS';
 export const FAVORITE_PRODUCT = '@xpto/FAVORITE_PRODUCT';
+export const FILTER_PRODUCTS = '@xpto/FILTER_PRODUCTS';
 
 /*
  * ACTIONS
@@ -48,4 +47,14 @@ export interface FavoriteProductAction {
   payload: Product;
 }
 
-export type ProductsActionTypes = StoreProductsAction | FavoriteProductAction;
+export interface FilterProductsAction {
+  type: typeof FILTER_PRODUCTS;
+  payload: {
+    search: string;
+  };
+}
+
+export type ProductsActionTypes =
+  | StoreProductsAction
+  | FavoriteProductAction
+  | FilterProductsAction;
