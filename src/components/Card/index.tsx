@@ -34,7 +34,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
       isExclusive={product.exclusivo}
     >
       <Link to={`/product/${product.id}`} className="card__header">
-        <img src={product.imagem} alt="produto" />
+        <img src={product.imagem} alt={product.nome} />
         {product.promocao && <div className="card__tag">Promoção</div>}
         {product.exclusivo && <div className="card__tag">Exclusivo</div>}
       </Link>

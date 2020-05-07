@@ -168,7 +168,6 @@ export const ProductImage = styled.div`
   img {
     width: 100%;
     object-fit: cover;
-    transition: transform 1s ease-in-out;
   }
 
   .tag {
@@ -177,9 +176,15 @@ export const ProductImage = styled.div`
     right: 0;
     color: #fff;
     padding: 4px 16px;
-    background: transparent linear-gradient(125deg, #ef0e5a 0%, #55118f 100%) 0%
-      0% no-repeat padding-box;
 
-    /* background: transparent linear-gradient(125deg, #1DB6CE 0%, #182AC9 100%) 0% 0% no-repeat padding-box; */
+    &--promotion {
+      background: transparent linear-gradient(125deg, #ef0e5a 0%, #55118f 100%)
+        0% 0% no-repeat padding-box;
+    }
+
+    &--exclusive {
+      background: transparent linear-gradient(125deg, #1db6ce 0%, #182ac9 100%)
+        0% 0% no-repeat padding-box;
+    }
   }
 `;
