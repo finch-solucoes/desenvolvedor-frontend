@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import axios from 'axios';
 
+import Loader from './components/Loader';
 import ScrollToTop from './components/ScrollToTop';
 import Routes from './routes';
 import { storeProducts } from './store/modules/products/actions';
@@ -36,7 +37,7 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <Suspense fallback={<h1>loading...</h1>}>
+        <Suspense fallback={<Loader />}>
           <Routes />
         </Suspense>
       </BrowserRouter>
