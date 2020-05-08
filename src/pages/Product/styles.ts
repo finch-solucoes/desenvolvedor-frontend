@@ -150,7 +150,7 @@ export const Datasheet = styled.div`
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 8px;
+    grid-gap: 8px 24px;
 
     li {
       margin-left: 20px;

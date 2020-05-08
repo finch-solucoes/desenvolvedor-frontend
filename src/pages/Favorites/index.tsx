@@ -44,7 +44,9 @@ const Favorites: React.FC = () => {
         {products.length <= 0 && !!searchTerm ? (
           <h1>Nenhum produto encontrado =(</h1>
         ) : (
-          <h1>Nenhum produto adicionado aos seus favoritos</h1>
+          products.length <= 0 && (
+            <h1>Nenhum produto adicionado aos seus favoritos</h1>
+          )
         )}
       </Container>
     </>
