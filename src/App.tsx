@@ -18,7 +18,7 @@ const App: React.FC = () => {
     async function loadProducts(): Promise<void> {
       const {
         data: { produtos },
-      } = await axios.get('http://www.mocky.io/v2/5d3b57023000005500a2a0a6');
+      } = await axios.get('https://www.mocky.io/v2/5d3b57023000005500a2a0a6');
 
       // set favorite default value
       const products = produtos.map((produto: Product) => ({

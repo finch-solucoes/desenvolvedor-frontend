@@ -1,44 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <img alt="finch" src="src/assets/images/code.png" />
+</h1>
 
-## Available Scripts
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasdeoliveira/finch-xpto.svg">
 
-In the project directory, you can run:
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/douglasdeoliveira/finch-xpto.svg">
 
-### `yarn start`
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/douglasdeoliveira/finch-xpto.svg">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <a href="https://github.com/douglasdeoliveira/finch-xpto/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/douglasdeoliveira/finch-xpto.svg">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <a href="https://github.com/douglasdeoliveira/finch-xpto/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/douglasdeoliveira/finch-xpto.svg">
+  </a>
 
-### `yarn test`
+  <img alt="GitHub" src="https://img.shields.io/github/license/douglasdeoliveira/finch-xpto.svg">
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="center">
+  <a href="#demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-ecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-como-utilizar">Como utilizar</a>
+</p>
 
-### `yarn build`
+## Demo
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Acesse a [demo](https://keen-lamport-0e3f9f.netlify.app/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :rocket: Tecnologias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-### `yarn eject`
+- [React](https://reactjs.org/)
+- [React router](https://reacttraining.com/react-router/)
+- [Redux](https://redux.js.org/)
+- [Immer](https://github.com/immerjs/immer)
+- [Jest](https://jestjs.io/)
+- [i18next](https://react.i18next.com/)
+- [Axios](https://github.com/axios/axios)
+- [Styled Components](https://react.i18next.com/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://github.com/typicode/husky)
+- [Prettier](https://prettier.io/)
+- [Storybook](https://storybook.js.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :information_source: Como utilizar
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Faça o clone do repositório
+git clone https://github.com/douglasdeoliveira/finch-xpto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# instale as dependências
+cd finch-xpto && yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# frontend
+yarn start
 
-## Learn More
+# test
+yarn test
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# storybook
+yarn run storybook
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feito com ♥ by Douglas de Oliveira
