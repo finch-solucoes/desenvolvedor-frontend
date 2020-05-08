@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { useDispatch } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -36,7 +36,9 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <Routes />
+        <Suspense fallback={<h1>loading...</h1>}>
+          <Routes />
+        </Suspense>
       </BrowserRouter>
       <GlobalStyle />
     </>

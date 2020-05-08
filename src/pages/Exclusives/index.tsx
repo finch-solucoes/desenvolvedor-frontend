@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 import Card from '../../components/Card';
@@ -9,6 +10,8 @@ import { Product } from '../../store/modules/products/types';
 import { Container } from './styles';
 
 const Exclusives: React.FC = () => {
+  const { t } = useTranslation();
+
   const { all, searchTerm } = useSelector(
     (state: ApplicationState) => state.products,
   );
@@ -33,8 +36,8 @@ const Exclusives: React.FC = () => {
   return (
     <>
       <Header
-        title="Conheça nossos produtos exclusivos"
-        subTitle="Listagem de produtos exclusivos - clique no produto desejado para saber mais"
+        title={t('EXCLUSIVES.TITLE')}
+        subTitle={t('EXCLUSIVES.SUBTITLE')}
       />
       <Container>
         <CardGrid>
@@ -43,7 +46,7 @@ const Exclusives: React.FC = () => {
           ))}
         </CardGrid>
         {products.length <= 0 && !!searchTerm ? (
-          <h1>Nenhum produto encontrado =(</h1>
+          <h1>{t('SEARCH.NOT_FOUND')}</h1>
         ) : null}
       </Container>
     </>

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 
 import { useDebounce } from 'use-debounce';
 
-import loupeImg from '../../assets/loupe.png';
+import loupeImg from '../../assets/images/loupe.png';
 import { filterProducts } from '../../store/modules/products/actions';
 import { Container } from './styles';
 
 const SearchInput: React.FC = () => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   const [searchValue, setSearchValue] = useState<string>('');
   const [debouncedInput] = useDebounce(searchValue, 500);
@@ -19,10 +21,10 @@ const SearchInput: React.FC = () => {
 
   return (
     <Container>
-      <img src={loupeImg} alt="botão de busca" />
+      <img src={loupeImg} alt={t('IMG_ALT.ICON_SEARCH')} />
       <input
         type="text"
-        placeholder="Busca"
+        placeholder={t('SEARCH.PLACEHOLDER')}
         onChange={e => setSearchValue(e.target.value)}
       />
     </Container>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 import Card from '../../components/Card';
@@ -9,6 +10,8 @@ import { Product } from '../../store/modules/products/types';
 import { Container } from './styles';
 
 const Favorites: React.FC = () => {
+  const { t } = useTranslation();
+
   const { all, searchTerm } = useSelector(
     (state: ApplicationState) => state.products,
   );
@@ -31,10 +34,7 @@ const Favorites: React.FC = () => {
   }, [searchTerm, all]);
   return (
     <>
-      <Header
-        title="Meus favoritos"
-        subTitle="Listagem de produtos marcados como favoritos - clique no produto desejado para saber mais"
-      />
+      <Header title={t('FAVORITES.TITLE')} subTitle={t('FAVORITES.SUBTITLE')} />
       <Container>
         <CardGrid>
           {products.map(product => (
@@ -42,11 +42,9 @@ const Favorites: React.FC = () => {
           ))}
         </CardGrid>
         {products.length <= 0 && !!searchTerm ? (
-          <h1>Nenhum produto encontrado =(</h1>
+          <h1>{t('SEARCH.NOT_FOUND')}</h1>
         ) : (
-          products.length <= 0 && (
-            <h1>Nenhum produto adicionado aos seus favoritos</h1>
-          )
+          products.length <= 0 && <h1>{t('FAVORITES.EMPTY')}</h1>
         )}
       </Container>
     </>

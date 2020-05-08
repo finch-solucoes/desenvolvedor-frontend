@@ -1,4 +1,5 @@
 import React, { useMemo, memo, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Switch from 'react-switch';
@@ -13,6 +14,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ product }) => {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   const formatedPrice = useMemo(
     () =>
@@ -35,8 +37,12 @@ const Card: React.FC<CardProps> = ({ product }) => {
     >
       <Link to={`/product/${product.id}`} className="card__header">
         <img src={product.imagem} alt={product.nome} />
-        {product.promocao && <div className="card__tag">Promoção</div>}
-        {product.exclusivo && <div className="card__tag">Exclusivo</div>}
+        {product.promocao && (
+          <div className="card__tag">{t('PRODUCT.PROMOTION')}</div>
+        )}
+        {product.exclusivo && (
+          <div className="card__tag">{t('PRODUCT.EXCLUSIVE')}</div>
+        )}
       </Link>
       <div className="card__body">
         <div>
@@ -53,7 +59,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
               checkedIcon={false}
               uncheckedIcon={false}
             />
-            <span>tornar favorito</span>
+            <span>{t('PRODUCT.SWITCH_FAVORITE')}</span>
           </div>
         </div>
 

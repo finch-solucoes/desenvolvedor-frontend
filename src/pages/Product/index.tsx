@@ -1,9 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 import Switch from 'react-switch';
 
-import returnImg from '../../assets/return.png';
+import returnImg from '../../assets/images/return.png';
 import { ApplicationState } from '../../store';
 import { toggleFavoriteProduct } from '../../store/modules/products/actions';
 import { Product } from '../../store/modules/products/types';
@@ -28,6 +29,7 @@ interface ProductRouteParams {
 const ProductPage: React.FC = () => {
   const dispatch = useDispatch();
   const history = useHistory();
+  const { t } = useTranslation();
   const { id } = useParams<ProductRouteParams>();
 
   const [product, setProduct] = useState<Product | null>();
@@ -54,7 +56,7 @@ const ProductPage: React.FC = () => {
     <>
       <Header>
         <BackButton type="button" onClick={handleGoBack}>
-          <img src={returnImg} alt="botão para voltar a página" />
+          <img src={returnImg} alt={t('IMG_ALT.BACK')} />
         </BackButton>
         <Divider />
         <Info>
@@ -79,7 +81,7 @@ const ProductPage: React.FC = () => {
                   checkedIcon={false}
                   uncheckedIcon={false}
                 />
-                <span>tornar favorito</span>
+                <span>{t('PRODUCT.SWITCH_FAVORITE')}</span>
               </Favorite>
             </div>
           </div>
@@ -91,20 +93,20 @@ const ProductPage: React.FC = () => {
           <ProductImage>
             <img src={product?.imagem} alt={product?.nome} />
             {product?.promocao && (
-              <div className="tag tag--promotion">Promoção</div>
+              <div className="tag tag--promotion">{t('PRODUCT.PROMOTION')}</div>
             )}
             {product?.exclusivo && (
-              <div className="tag tag--exclusive">Exclusivo</div>
+              <div className="tag tag--exclusive">{t('PRODUCT.EXCLUSIVE')}</div>
             )}
           </ProductImage>
 
           <div>
-            <Title>Detalhes do Produto</Title>
+            <Title>{t('PRODUCT.DETAILS')}</Title>
             <p>{product?.descricaoLonga}</p>
           </div>
         </Details>
         <Datasheet>
-          <Title>Ficha Técnica</Title>
+          <Title>{t('PRODUCT.DATASHEET')}</Title>
           <hr />
           <ul>
             {product?.fichaTecnica.map((info, index) => (
@@ -115,7 +117,7 @@ const ProductPage: React.FC = () => {
           </ul>
         </Datasheet>
         <FabBackButton type="button" onClick={handleGoBack}>
-          <img src={returnImg} alt="botão para voltar a página" />
+          <img src={returnImg} alt={t('IMG_ALT.BACK')} />
         </FabBackButton>
       </Container>
     </>

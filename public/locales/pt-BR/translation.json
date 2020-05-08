@@ -1,0 +1,41 @@
+{
+  "HOME": {
+    "TITLE": "Conheça todos os nossos produtos",
+    "SUBTITLE": "Listagem de produtos - clique no produto desejado para saber mais"
+  },
+  "EXCLUSIVES": {
+    "TITLE": "Conheça nossos produtos exclusivos",
+    "SUBTITLE": "Listagem de produtos exclusivos - clique no produto desejado para saber mais"
+  },
+  "PROMOTION": {
+    "TITLE": "Conheça nossas promoções",
+    "SUBTITLE": "Listagem de produtos em promoção - clique no produto desejado para saber mais"
+  },
+  "FAVORITES": {
+    "TITLE": "Meus favoritos",
+    "SUBTITLE": "Listagem de produtos marcados como favoritos - clique no produto desejado para saber mais",
+    "EMPTY": "Nenhum produto adicionado aos seus favoritos"
+  },
+  "PAGE_NOT_FOUND": "A página que você está buscando não foi encontrada",
+  "PRODUCT": {
+    "DETAILS": "Detalhes do Produto",
+    "DATASHEET": "Ficha Técnica",
+    "SWITCH_FAVORITE": "tornar favorito",
+    "PROMOTION": "Promoção",
+    "EXCLUSIVE": "Exclusivo"
+  },
+  "SEARCH": {
+    "PLACEHOLDER": "Busca",
+    "NOT_FOUND": "Nenhum produto encontrado =("
+  },
+  "IMG_ALT": {
+    "BACK": "voltar página",
+    "FLAG_BR": "bandeira do Brasil",
+    "FLAG_USA": "bandeira dos Estados Unidos da América",
+    "ICON_SEARCH": "ícone de busca",
+    "ICON_ALL": "ícone todos os produtos",
+    "ICON_EXCLUSIVE": "ícone produtos exclusivos",
+    "ICON_PROMOTION": "ícone produtos em promoção",
+    "ICON_FAVORITE": "ícone produtos favoritos"
+  }
+}

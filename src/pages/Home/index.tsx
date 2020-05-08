@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 import Card from '../../components/Card';
@@ -9,6 +10,8 @@ import { Product } from '../../store/modules/products/types';
 import { Container } from './styles';
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
+
   const { all, searchTerm } = useSelector(
     (state: ApplicationState) => state.products,
   );
@@ -29,10 +32,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header
-        title="Conheça todos os nossos produtos"
-        subTitle="Listagem de produtos - clique no produto desejado para saber mais"
-      />
+      <Header title={t('HOME.TITLE')} subTitle={t('HOME.SUBTITLE')} />
       <Container>
         <CardGrid>
           {products.map(product => (
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           ))}
         </CardGrid>
         {products.length <= 0 && !!searchTerm ? (
-          <h1>Nenhum produto encontrado =(</h1>
+          <h1>{t('SEARCH.NOT_FOUND')}</h1>
         ) : null}
       </Container>
     </>

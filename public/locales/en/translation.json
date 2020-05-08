@@ -1,0 +1,41 @@
+{
+  "HOME": {
+    "TITLE": "Discover all our products",
+    "SUBTITLE": "Product listing - click on the desired product to find out more"
+  },
+  "EXCLUSIVES": {
+    "TITLE": "Discover our exclusive products",
+    "SUBTITLE": "Exclusive product listing - click on the desired product to find out more"
+  },
+  "PROMOTION": {
+    "TITLE": "Discover our promotions",
+    "SUBTITLE": "List of products on sale - click on the desired product to find out more"
+  },
+  "FAVORITES": {
+    "TITLE": "My favorites",
+    "SUBTITLE": "List of products marked as favorites - click on the desired product to learn more",
+    "EMPTY": "No products added to your favorites"
+  },
+  "PAGE_NOT_FOUND": "The page you are looking for was not found",
+  "PRODUCT": {
+    "DETAILS": "Product Details",
+    "DATASHEET": "Datasheet",
+    "SWITCH_FAVORITE": "make favorite",
+    "PROMOTION": "Promotion",
+    "EXCLUSIVE": "Exclusive"
+  },
+  "SEARCH": {
+    "PLACEHOLDER": "Search",
+    "NOT_FOUND": "No products found =("
+  },
+  "IMG_ALT": {
+    "BACK": "back page",
+    "FLAG_BR": "Brazil's flag",
+    "FLAG_USA": "flag of the United States of America",
+    "ICON_SEARCH": "search icon",
+    "ICON_ALL": "all products icon",
+    "ICON_EXCLUSIVE": "exclusive products icon",
+    "ICON_PROMOTION": "promotion products icon",
+    "ICON_FAVORITE": "favorite products icon"
+  }
+}

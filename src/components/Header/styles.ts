@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import colors from '../../styles/colors';
 
@@ -8,9 +8,38 @@ export const Container = styled.header`
   padding: 72px 0 48px;
   border-bottom: 1px solid #ccc;
 
+  .header__search {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__flags {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+  }
+
   @media (max-width: 1220px) {
     flex-direction: column;
   }
+`;
+
+interface FlagButtonProps {
+  active: boolean;
+}
+
+export const FlagButton = styled.button<FlagButtonProps>`
+  border: 0;
+  background: transparent;
+
+  ${props =>
+    !props.active &&
+    css`
+      img {
+        filter: grayscale(1);
+        opacity: 0.6;
+      }
+    `}
 `;
 
 export const InfoPage = styled.div`
