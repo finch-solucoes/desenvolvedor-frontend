@@ -24,6 +24,12 @@
     "PROMOTION": "Promotion",
     "EXCLUSIVE": "Exclusive"
   },
+  "MENU": {
+    "ALL": "All",
+    "EXCLUSIVES": "Exclusives",
+    "PROMOTION": "Promotion",
+    "FAVORITES": "Favorites"
+  },
   "SEARCH": {
     "PLACEHOLDER": "Search",
     "NOT_FOUND": "No products found =("
